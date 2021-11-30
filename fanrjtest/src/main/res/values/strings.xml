@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">FanRJTest</string>
+    <string name="btnString" translatable="false">读取学习任务</string>
+</resources>

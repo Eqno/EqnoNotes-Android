@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FanRJLab3</string>
+    <string name="tvString1">我的用户名</string>
+    <string name="tvString2">我的座右铭</string>
+    <string name="etString1">请输入用户名或座右铭</string>
+    <string name="etString2">请输入数字日期</string>
+    <string name="etString3">请输入学习任务</string>
+    <string name="etString4">请输入备注</string>
+    <string name="btnString1">修改用户名</string>
+    <string name="btnString2">修改座右铭</string>
+    <string name="btnString3">添加学习任务</string>
+</resources>
