@@ -8,12 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FanRJLab3">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".NoteActivity"
+            android:exported="true" />
+
         <provider
-            android:authorities="cn.edu.ujn.SQLite"
             android:name=".MyContentProvider"
+            android:authorities="cn.edu.ujn.SQLite"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

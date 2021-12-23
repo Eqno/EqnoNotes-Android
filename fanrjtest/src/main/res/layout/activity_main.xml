@@ -2,26 +2,226 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="0dp"
-        android:layout_height="500dp"
+    <TextView
+        android:id="@+id/tip_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:text="@string/tasks"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/struct_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_1" />
+
+    <TextView
+        android:id="@+id/tip_item_1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="序号"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip_task" />
+
+    <TextView
+        android:id="@+id/tip_item_2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="日期"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tip_item_1"
+        app:layout_constraintTop_toBottomOf="@+id/tip_task" />
+
+    <TextView
+        android:id="@+id/tip_item_3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="事项"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tip_item_2"
+        app:layout_constraintTop_toBottomOf="@+id/tip_task" />
+
+    <TextView
+        android:id="@+id/tip_item_4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="备注"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tip_item_3"
+        app:layout_constraintTop_toBottomOf="@+id/tip_task" />
+
+    <TextView
+        android:id="@+id/struct_view"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#66000000"
+        app:layout_constraintBottom_toTopOf="@+id/struct_view_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_1" />
+
+    <TextView
+        android:id="@+id/struct_view_1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="#66000000"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/b1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+    <TextView
+        android:id="@+id/struct_view_3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#66000000"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listView1" />
+        app:layout_constraintTop_toBottomOf="@+id/tip_task" />
+
+    <TextView
+        android:id="@+id/struct_view_4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="#66000000"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_3" />
+
+    <TextView
+        android:id="@+id/struct_view_5"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:background="#66000000"
+        app:layout_constraintBottom_toTopOf="@+id/struct_view_4"
+        app:layout_constraintStart_toEndOf="@+id/tip_item_1"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_3" />
+
+    <TextView
+        android:id="@+id/struct_view_6"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:background="#66000000"
+        app:layout_constraintBottom_toTopOf="@+id/struct_view_4"
+        app:layout_constraintStart_toEndOf="@+id/tip_item_2"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_3" />
+
+    <TextView
+        android:id="@+id/struct_view_7"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:background="#66000000"
+        app:layout_constraintBottom_toTopOf="@+id/struct_view_4"
+        app:layout_constraintStart_toEndOf="@+id/tip_item_3"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_3" />
+
+    <TextView
+        android:id="@+id/struct_view_16"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#66000000"
+        app:layout_constraintBottom_toTopOf="@+id/struct_view_4"
+        app:layout_constraintStart_toStartOf="@+id/struct_view_3"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_3" />
+
+    <TextView
+        android:id="@+id/struct_view_17"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:background="#66000000"
+        app:layout_constraintBottom_toTopOf="@+id/struct_view_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_3" />
+
+    <TextView
+        android:id="@+id/struct_view_18"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#66000000"
+        app:layout_constraintBottom_toBottomOf="@+id/struct_view"
+        app:layout_constraintStart_toStartOf="@+id/struct_view_3"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_1" />
+
+    <TextView
+        android:id="@+id/struct_view_19"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#66000000"
+        app:layout_constraintBottom_toBottomOf="@+id/struct_view"
+        app:layout_constraintEnd_toEndOf="@+id/struct_view_1"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_1" />
+
+    <ListView
+        android:id="@+id/task_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_4">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/query_task"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#2969BD"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="0dp"
+        android:text="查询事项"
+        app:layout_constraintBottom_toTopOf="@+id/struct_view_3"
+        app:layout_constraintEnd_toEndOf="@+id/struct_view_19"
+        app:layout_constraintStart_toEndOf="@+id/struct_view"
+        app:layout_constraintTop_toBottomOf="@+id/struct_view_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

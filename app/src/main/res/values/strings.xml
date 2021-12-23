@@ -1,12 +1,20 @@
 <resources>
     <string name="app_name">FanRJLab3</string>
-    <string name="tvString1">我的用户名</string>
-    <string name="tvString2">我的座右铭</string>
-    <string name="etString1">请输入用户名或座右铭</string>
-    <string name="etString2">请输入数字日期</string>
-    <string name="etString3">请输入学习任务</string>
-    <string name="etString4">请输入备注</string>
-    <string name="btnString1">修改用户名</string>
-    <string name="btnString2">修改座右铭</string>
-    <string name="btnString3">添加学习任务</string>
+    <string name="my_name">我的用户名</string>
+    <string name="my_motto">我的座右铭</string>
+    <string name="tip_name">用户名：</string>
+    <string name="tip_motto">座右铭：</string>
+    <string name="modify_name">修改用户名</string>
+    <string name="modify_motto">修改座右铭</string>
+    <string name="tasks">待办事项</string>
+    <string name="add_task">添加事项</string>
+    <string name="input_date">请输入日期</string>
+    <string name="input_task">请输入任务</string>
+    <string name="input_remark">请输入备注</string>
+    <string name="add">添加</string>
+    <string name="back">返回</string>
+    <string name="date">日期：</string>
+    <string name="task">任务：</string>
+    <string name="remark">备注：</string>
+    <string name="tip_add">添加待办事项</string>
 </resources>
